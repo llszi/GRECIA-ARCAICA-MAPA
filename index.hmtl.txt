@@ -1,0 +1,51 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa da Grécia Arcaica - 30 Territórios</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Remove barras de rolagem extras */
+            font-family: sans-serif;
+        }
+        #storymap-container {
+            width: 100%;
+            height: 100vh; /* Ocupa 100% da altura da janela */
+            border: none;
+        }
+        /* Estilo opcional para uma mensagem de carregamento ou fallback */
+        .loading-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #555;
+            z-index: 10;
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="storymap-container">
+        <iframe 
+            id="storymap-frame"
+            src="https://uploads.knightlab.com/storymapjs/0631c62f80106b92ba7c6d6b5b1c0be7/grecia-arcaica/index.html" 
+            frameborder="0" 
+            width="100%" 
+            height="100%" 
+            allowfullscreen
+            title="StoryMap da Grécia Arcaica">
+            <p>Seu navegador não suporta iframes. <a href="https://uploads.knightlab.com/storymapjs/0631c62f80106b92ba7c6d6b5b1c0be7/grecia-arcaica/index.html">Clique aqui para abrir o mapa.</a></p>
+        </iframe>
+    </div>
+</body>
+</html>
